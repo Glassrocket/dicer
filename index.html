@@ -3,10 +3,37 @@
 <head>
     <title>Dicer game</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
-<html>
-    <body>
-        <div class="main-wrwpper" id="main-wrapp">
+<html class="flex-col-center">
+    <body class="flex-col-center">
+        <div class="main-wrapper flex-col-top" id="main-wrapp">
+            <div id="info-block">
+                <h1>Face a worthy oponent</h1>
+                <div id="info-wrapper-id" class="flex-row-between info-wrapper">
+         <!-- ============= PLAYER BOX =============== -->
+                    <div id="player-box-id" class="player-box">
+                        <h3 class="player-name" id="player-name-id">Player</h3>
+                        <!-- HP BAR --------------------- -->
+                        <div id="hp-bar-max-id" class="hp-bar-max">
+                            <p class="current-hp" id="current-hp-id" >80<p>
+                            <div class="hp-bar" id="hp-bar-id"></div>
+                        </div>
+                        <p class="player-damage" id="player-damage-id">Player Damage: 2-10</p>
+                    </div>
+        <!-- ============= ENEMY BOX =============== -->           
+                    <div class="enemy-box" id="enemy-box-id">
+                        <h3 class="enemy-name" id="enemy-name-id">Enemy</h3>
+                        <!-- HP BAR --------------------- -->
+                        <div id="hp-bar-enemy-max-id" class="hp-bar-max">
+                            <p class="current-hp" id="current-hp-enemy-id" >80<p>
+                            <div class="hp-bar" id="hp-bar-enemy-id"></div>
+                        </div>
+                        <p class="enemy-damage" id="enemy-damage-id">Damage: 2-10</p>
+                    </div>
+                </div>
+            </div>
+            <div id="combat-log-container"></div>
 
         </div>
         <script src="script.js"></script>
